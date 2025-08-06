@@ -23,6 +23,14 @@ jobs:
       run: |
         pip install flake8
         flake8 app.py
+    - name: Security scan with bandit
+      run: |
+        pip install bandit
+        bandit -r app.py
+    - name: Dependency scan with safety
+      run: |
+        pip install safety
+        safety check
     - name: Run tests with pytest
       run: |
         pip install pytest
