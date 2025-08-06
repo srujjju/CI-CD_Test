@@ -7,7 +7,7 @@ This is a minimal Flask application with a single endpoint.
 1. Create a virtual environment (optional but recommended):
    ```powershell
    python -m venv venv
-   .\venv\Scripts\activate
+   .\venv\Scripts\activate..
    ```
 2. Install dependencies:
    ```powershell
